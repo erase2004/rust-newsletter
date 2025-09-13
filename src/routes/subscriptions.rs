@@ -6,7 +6,6 @@ use chrono::Utc;
 use rand::distributions::Alphanumeric;
 use rand::{Rng, thread_rng};
 use sqlx::{Executor, PgPool, Postgres, Transaction};
-use unicode_segmentation::UnicodeSegmentation;
 use uuid::Uuid;
 
 #[derive(serde::Deserialize)]
