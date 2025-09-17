@@ -22,9 +22,9 @@ async fn you_must_be_logged_in_to_change_your_password() {
     // Act
     let response = app
         .post_change_password(&serde_json::json!({
-        "current_password": Uuid::new_v4().to_string(),
-        "new_password": &new_password,
-        "new_password_check": &new_password,
+            "current_password": Uuid::new_v4().to_string(),
+            "new_password": &new_password,
+            "new_password_check": &new_password,
         }))
         .await;
 
