@@ -65,6 +65,7 @@ quickcheck_macros = "1"
 tokio = { version = "1", features = ["rt", "macros"] }
 wiremock = "0.6"
 linkify = "0.10"
+serde_urlencoded = "0.7.0"
 
 [target.x86_64-pc-windows-msvc]
 rustflags = ["-C", "link-arg=-fuse-ld=lld"]
